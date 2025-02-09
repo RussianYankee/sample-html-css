@@ -5,12 +5,12 @@
   margin: 0 auto;
 }
 
-@mixin btn($bd-color, $bg-color, $bdrs, $color, $font-size, $p-top, $p-bottom) {
-  border: 1px solid $bd-color;
+@mixin btn($border-color, $bg-color, $border-radius, $color, $font-size, $p-top, $p-left) {
+  border: 1px solid $border-color;
   background-color: $bg-color;
-  border-radius: $bdrs;
+  border-radius: $border-radius;
   color: $color;
   font-size: $font-size;
-  padding: $p-top $p-bottom;
+  padding: $p-top $p-left;
   cursor: pointer;
 }

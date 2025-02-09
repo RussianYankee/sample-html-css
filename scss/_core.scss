@@ -1,8 +1,8 @@
 /*Basic style*/
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: $light-gray;
+  font-family: 'Chivo', sans-serif;
+  background: #fff;
 }
 
 .container {
@@ -10,13 +10,13 @@ body {
 }
 
 .wrap {
-  @include min-max(320px, 1180px);
+  @include min-max(320px, 1120px);
 }
 
 p,
 a,
 button {
-  color: $gray;
+  color: #000;
 }
 
 img {
