@@ -62,6 +62,15 @@
             font-size: 16px;
             flex-grow: 1;
             text-indent: 14px;
+            font-family: 'Chivo', sans-serif;
+        }
+        &--borderless::placeholder {
+            color: $text-disabled;
+            opacity: 1; /* Firefox */
+        }
+          
+        &--borderless::-ms-input-placeholder { /* Edge 12 -18 */
+            color: $text-disabled;
         }
     }
 
