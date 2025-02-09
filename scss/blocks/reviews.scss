@@ -1,6 +1,8 @@
+@import "../variables";
 .reviews {
     display: flex;
     margin-top: 120px;
+    padding-bottom: 120px;
 
     &__content {
         display: flex;
@@ -16,7 +18,7 @@
     &__cards-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-top: 48px;
         gap: 40px;
     }
@@ -25,6 +27,7 @@
         background-color: $pattern-fill;
         border-radius: 6px;
         padding: 40px 32px;
+        max-width: 25%;
     }
 }
 
@@ -41,13 +44,27 @@
     }
 
     &__author {
+        display: flex;
+        flex-direction: row;
+        margin-top: 33px;
+
         &-avatar {
             width: 50px;
             height: 50px;
+            img {
+                border-radius: 50%;
+            }
         }
+
+        &-desc {
+            margin-left: 16px;
+        }
+
         &-name {
             font-weight: 700;
+            color: $bg-footer;
         }
+
         &-position {
             color: $primary;
         }
