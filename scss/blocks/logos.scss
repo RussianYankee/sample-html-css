@@ -1,0 +1,11 @@
+.logos {
+    height: 40px;
+    margin-top: 95px;
+    
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
