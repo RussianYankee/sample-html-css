@@ -24,15 +24,12 @@
         border-radius: 6px;
         width: calc(50% - 15px);
 
-        &--line {
-            margin-top: 35%;
-        }
-
         &--title {
             font-weight: 700;
             font-size: 22px;
             line-height: 32px;
             margin-top: 24px;
+            text-align: center;
         }
 
         &--text {
@@ -45,6 +42,15 @@
         &--illustration {
             width: 100%;
             height: 100%;
+        }
+
+        &--line {
+            min-width: 150px;
+
+            img {
+                width: 100%;
+                margin-top: calc(50% + 24px);
+            }
         }
     }
 }
