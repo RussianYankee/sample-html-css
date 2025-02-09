@@ -65,9 +65,46 @@
         }
     }
 
+    &__text-hint {
+        color: $text-gray;
+        font-size: 16px;
+        line-height: 150%;
+        font-style: italic;
+        margin-top: 12px;
+    }
+
     &__button--primary {
         @include btn(transparent, $primary, 6px, $white, 16px, 15px, 30px);
         font-weight: 700;
         line-height: 20px;
+    }
+
+    &__counters {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 48px;
+        width: 75%;
+    }
+
+    &__counter {
+        &-item {
+            display: flex;
+            flex-direction: column;
+            width: calc(50% - 30px);
+        }
+
+        &--title {
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 54px;
+        }
+
+        &--text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: $text-gray;
+        }
     }
 }
