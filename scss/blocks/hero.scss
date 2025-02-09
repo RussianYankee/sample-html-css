@@ -1,0 +1,44 @@
+@import '../variables';
+@import '../mixins';
+.hero {
+    display: flex;
+
+    &__content {
+        grid-row: 2;
+    }
+
+    &__title {
+        width: 536px;
+        font-size: 52px;
+        line-height: 58px;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+
+    &__text {
+        width: 440px;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 32px;
+        color: $text-gray
+    }
+
+    &__input {
+        display: flex;
+        align-items: center;
+        width: 480px;
+        height: 66px;
+        border: 1px solid $text-disabled;
+        border-radius: 6px;
+
+        &--borderless {
+            border: 0;
+        }
+    }
+
+    &__button--primary {
+        @include btn(transparent, $primary, 6px, $white, 16px, 15px, 30px);
+        font-weight: 700;
+        line-height: 20px;
+    }
+}
