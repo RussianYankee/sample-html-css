@@ -10,7 +10,7 @@
 
     &__title {
         text-align: center;
-        width: 45%;
+        width: 60%;
     }
 
     &__cards-container {
@@ -30,12 +30,14 @@
 
 .review {
     &__logo {
-        width: 100px;
-        height: 100px;
+        max-width: 50%;
+        max-height: 30px;
     }
 
     &__text {
-        color: $text-gray;
+        margin-top: 31px;
+        line-height: 150%;
+        font-style: italic;
     }
 
     &__author {
