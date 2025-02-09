@@ -7,10 +7,11 @@
 @import 'core';
 @import 'generic';
 
-@import '/scss/blocks/menubar.scss';
-@import '/scss/blocks/hero.scss';
-@import '/scss/blocks/logos.scss';
-@import '/scss/blocks/process.scss';
-@import '/scss/blocks/benefits.scss';
-@import '/scss/blocks/features.scss';
-@import '/scss/blocks/map.scss';
+@import 'blocks/menubar.scss';
+@import 'blocks/hero.scss';
+@import 'blocks/logos.scss';
+@import 'blocks/process.scss';
+@import 'blocks/benefits.scss';
+@import 'blocks/features.scss';
+@import 'blocks/map.scss';
+@import 'blocks/reviews.scss'
