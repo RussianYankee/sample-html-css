@@ -5,9 +5,11 @@
 @import 'fonts';
 @import 'mixins';
 @import 'core';
+@import 'generic';
 
 @import '/scss/blocks/menubar.scss';
 @import '/scss/blocks/hero.scss';
 @import '/scss/blocks/logos.scss';
 @import '/scss/blocks/process.scss';
 @import '/scss/blocks/benefits.scss';
+@import '/scss/blocks/features.scss';
