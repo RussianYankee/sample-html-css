@@ -9,10 +9,7 @@
     }
 
     &__title {
-        font-size: 44px;
-        line-height: 54px;
         margin-bottom: 16px;
-        font-weight: 700;
         text-align: center;
         width: 45%;
     }
@@ -38,14 +35,13 @@
             line-height: 32px;
             margin-top: 24px;
             text-align: center;
+            color: $bg-footer;
         }
 
         &--text {
-            font-size: 16px;
             line-height: 150%;
             text-align: center;
             margin-top: 16px;
-            color: $text-gray;
         }
 
         &--illustration {
