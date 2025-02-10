@@ -1,0 +1,40 @@
+@import "../variables";
+.footer {
+    background-color: $bg-footer;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        hr {
+            width: 100%;
+            border-color: rgba(255, 255, 255, 0.2);
+            margin: 0;
+        }
+    }
+
+    &__block-1 {
+        padding-bottom: 64px;
+    }
+
+    &__title {
+        margin-top: 64px;
+        color: $white;
+        max-width: 480px;
+    }
+
+    &__text {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 28px;
+        color: $text-disabled;
+        max-width: 480px;
+        margin-bottom: 32px;
+    }
+
+    &__block-2 {
+        margin-top: 48px;
+    }
+    &__block-3 {
+        margin-top: 24px;
+    }
+}
