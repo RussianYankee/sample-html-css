@@ -11,6 +11,17 @@
         font-weight: 700;
         line-height: 20px;
     }
+
+    &__burger-btn {
+        display: none;
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
+        background-color: $white;
+        border: 0;
+        cursor: pointer;
+        z-index: 1;
+    }
     
     &__logo {
         width: 50px;
@@ -44,4 +55,93 @@
             margin-left: 25px;
         }
     }
+}
+
+@media screen and (max-width: 865px) {
+    .wrap-padding {
+        padding: 0 16px;
+    }
+
+    .menu {
+        justify-content: space-between;
+
+        &__logo {
+            flex-grow: 1;
+        }
+
+        &__navbar {
+            display: none;
+        }
+
+        &__button {
+            &--login, &--signup {
+                display: none;
+            }
+        }
+
+        &__burger-btn {
+            display: block;
+            position: relative;
+
+            input {
+                cursor: pointer;
+                position: relative;
+                visibility: hidden;
+                width: 24px;
+                height: 24px;
+                z-index: 2;
+
+                &:checked {
+                    ~ .menu__side {
+                        opacity: 1;
+                        transform: translate(0);
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 24px;
+                    height: 24px;
+                    visibility: visible;
+                    background: url('../../assets/icons/menu.svg') no-repeat;
+                    z-index: 1;
+                }
+            }
+        }
+
+        &__side {
+            position: relative;
+            top: 10px;
+            right: 110px;
+            width: fit-content;
+            background: $white;
+            border: 1px solid $pattern-fill;
+            padding: 15px 20px;
+            border-radius: 6px;
+            transform: translate(100%);
+            opacity: 0;
+            transition: all 0.5s;
+            z-index: 2;
+
+            &-list{
+                flex-direction: column;
+            }
+
+            &-item {
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &-link {
+                text-decoration: none;
+            }
+
+        }
+    }
+    
 }
