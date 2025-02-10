@@ -8,10 +8,11 @@
 </head>
 <body class="container">
     <section class="menubar">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <header class="menu">
                 <div class="menu__logo">
                     <img src="assets/icons/Logo.svg" alt="logo" />
+                    <p class="menu__logo--text">Growthly</p>
                 </div>
                 <nav class="menu__navbar">
                     <ul class="menu__navbar-list">
@@ -33,11 +34,30 @@
                     <button class="menu__button--login">Login</button>
                     <button class="menu__button--signup">Sign Up</button>
                 </div>
+                <div class="menu__burger-btn">
+                    <input type="checkbox" id="burger-btn" />
+                    <nav class="menu__side">
+                        <ul class="menu__side-list">
+                            <li class="menu__side-item">
+                                <a href="/" class="menu__side-link">Pricing</a>
+                            </li>
+                            <li class="menu__side-item">
+                                <a href="/" class="menu__side-link">Resources Center</a>
+                            </li>
+                            <li class="menu__side-item">
+                                <a href="/" class="menu__side-link">About</a>
+                            </li>
+                            <li class="menu__side-item">
+                                <a href="/" class="menu__side-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
         </div>
     </section>
     <section class="hero">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <div class="hero__content">
                 <div class="hero__content--left">
                     <h1 class="hero__title">We help any business to get analytics and sales marketing</h1>
@@ -67,7 +87,7 @@
         </div>
     </section>
     <section class="logos">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <div class="logos__list">
                 <img src="assets/img/logos/microsoft.svg" alt="" />
                 <img src="assets/img/logos/netflix.svg" alt="" />
@@ -79,64 +99,81 @@
         </div>
     </section>
     <section class="process">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <div class="process__content">
-                <h1 class="process__title">How our platform process easy to use?</h1>
+                <h1 class="process__title gen_section_header">How our platform process easy to use?</h1>
                 <div class="process__cards">
                     <div class="process__card">
                         <img src="assets/img/proc-login-pic.svg" alt="" class="process__card--illustration">
                         <h3 class="process__card--title">Login or sign up to be able use our platform</h3>
-                        <div class="process__card--text">You must log in first to be able to use our platform to get your product analytics</div>
+                        <div class="gen_card_text--16 process__card--text">You must log in first to be able to use our platform to get your product analytics</div>
                     </div>
                     <div class="process__card--line">
                         <img src="assets/img/direction-line-left.svg" alt="">
                     </div>
+                    <div class="process__card--line--mobile">
+                        <img src="assets/img/Arrow.svg" alt="">
+                    </div>
                     <div class="process__card">
                         <img src="assets/img/proc-connect-pic.svg" alt="" class="process__card--illustration">
                         <h3 class="process__card--title">Connect your website with just a few click</h3>
-                        <div class="process__card--text">Select the application you wanted to be able to connect with just a few clicks</div>
+                        <div class="gen_card_text--16 process__card--text">Select the application you wanted to be able to connect with just a few clicks</div>
                     </div>
                     <div class="process__card--line">
                         <img src="assets/img/direction-line-right.svg" alt="">
                     </div>
+                    <div class="process__card--line--mobile">
+                        <img src="assets/img/Arrow.svg" alt="">
+                    </div>
                     <div class="process__card">
                         <img src="assets/img/proc-data-pic.svg" alt="" class="process__card--illustration">
                         <h3 class="process__card--title">Take some sales data that you want</h3>
-                        <div class="process__card--text">You already have sales data of your product with some variants you want</div>
+                        <div class="gen_card_text--16 process__card--text">You already have sales data of your product with some variants you want</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="benefits">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <div class="benefits__content">
                 <div class="benefits__content--left">
                     <img class="benefits__illustration" src="assets/img/benefits-illustration.svg" alt="">
                 </div>
                 <div class="benefits__content--right">
-                    <h1 class="benefits__title">The reasons to prefer choosing our platform</h1>
+                    <h1 class="benefits__title gen_section_header">The reasons to prefer choosing our platform</h1>
                     <p class="benefits__text">Seamless integration of more than 20+ apps<br>that can help analytics your product</p>
+                    <div class="benefits__content--mobile">
+                        <img class="benefits__illustration" src="assets/img/benefits-illustration.svg" alt="">
+                    </div>
                     <div class="benefits__cards">
                         <div class="benefits__card">
                             <img class="benefits__card--icon" src="assets/icons/Chart.svg" alt="">
-                            <h3 class="benefits__card--title">Real time data</h3>
+                            <div class="benefits__card-text-wrapper">
+                                <h3 class="benefits__card--title">Real time data</h3>
                             <div class="benefits__card--text">Get the data you need to make smarter decisions.</div>
+                            </div>
                         </div>
                         <div class="benefits__card">
                             <img class="benefits__card--icon" src="assets/icons/Rocket.svg" alt="">
-                            <h3 class="benefits__card--title">Fast and Easy to use</h3>
+                            <div class="benefits__card-text-wrapper">
+                                <h3 class="benefits__card--title">Fast and Easy to use</h3>
                             <div class="benefits__card--text">Easily to convert API with just a few clicks</div>
+                            </div>
                         </div>
                         <div class="benefits__card">
                             <img class="benefits__card--icon" src="assets/icons/Security.svg" alt="">
-                            <h3 class="benefits__card--title">Safely Security</h3>
+                            <div class="benefits__card-text-wrapper">
+                                <h3 class="benefits__card--title">Safely Security</h3>
                             <div class="benefits__card--text">All customer data is encrypted</div>
+                            </div>
                         </div>
                         <div class="benefits__card">
                             <img class="benefits__card--icon" src="assets/icons/Dashboard.svg" alt="">
-                            <h3 class="benefits__card--title">Powerful App</h3>
+                            <div class="benefits__card-text-wrapper">
+                                <h3 class="benefits__card--title">Powerful App</h3>
                             <div class="benefits__card--text">Provide simple and minimalist dashboard</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -144,10 +181,13 @@
         </div>
     </section>
     <section class="features">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <div class="features__content">
                 <div class="features__content--left">
                     <h1 class="features__title gen_section_header">We provide features for your product</h1>
+                    <div class="features__content--mobile">
+                        <img class="features__illustration" src="assets/img/feat-illustration.svg" alt="">
+                    </div>
                     <div class="features__card--active">
                         <img src="assets/icons/Integrated.svg" alt="" class="features__icon">
                         <div class="features__card__content">
@@ -172,7 +212,7 @@
         </div>
     </section>
     <section class="map">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <div class="map__content">
                 <h1 class="map__title gen_section_header">Trusted by company around the world</h1>
                 <div class="map__graphics">
@@ -200,7 +240,7 @@
         </div>
     </section>
     <section class="reviews">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <div class="reviews__content">
                 <h1 class="reviews__title gen_section_header">See what our customers have to say about us</h1>
                 <div class="reviews__cards-container">
@@ -248,7 +288,7 @@
         </div>
     </section>
     <section class="footer">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <div class="footer__content">
                 <div class="footer__block-1">
                     <h2 class="gen_section_header footer__title">Ready to get started?</h2>

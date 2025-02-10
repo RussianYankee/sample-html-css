@@ -25,6 +25,11 @@
             background: url("../../assets/img/Pattern-3.svg") no-repeat;
             z-index: -1;
         }
+
+        &--mobile {
+            display: none;
+            margin-top: 32px;
+        }
     }
 
     &__card--active {
@@ -72,6 +77,59 @@
         }
         h3 {
             margin-left: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-md) {
+    .features {
+        margin-top: 64px;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__content {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 0;
+            &--left {
+                max-width: 100%;
+                width: 100%;
+            }
+            &--right {
+                display: none;
+            }
+            &--mobile {
+                display: block;
+                width: 100%;
+            }
+
+            &--mobile::before {
+                content: '';
+                position: absolute;
+                margin-left: 40px;
+                width: 403px;
+                height: 461px;
+                background: url("../../assets/img/Pattern-3.svg") no-repeat;
+                z-index: -1;
+                background-size: 400px 450px;
+            }
+        }
+
+        &__card{
+            &--active {
+                background-color: $white;
+            }
+
+            &__text {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            
+            &__link {
+                line-height: 22px;
+            }
         }
     }
 }

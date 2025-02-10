@@ -22,7 +22,7 @@
             width: 100%;
             height: 100%;
             background: url("../../assets/img/Pattern-1.svg") no-repeat;
-            z-index: 1;
+            z-index: -1;
         }
     }
 
@@ -38,6 +38,7 @@
         line-height: 58px;
         margin-bottom: 16px;
         font-weight: 700;
+        color: $bg-footer;
     }
 
     &__text {
@@ -61,6 +62,7 @@
         &--borderless {
             border: 0;
             font-size: 16px;
+            height: 32px;
             flex-grow: 1;
             text-indent: 14px;
             font-family: 'Chivo', sans-serif;
@@ -89,6 +91,10 @@
         line-height: 20px;
     }
 
+    &__button--primary:hover {
+        background-color: $primary-hover;
+    }
+
     &__counters {
         display: flex;
         flex-direction: row;
@@ -115,6 +121,50 @@
             font-size: 18px;
             line-height: 28px;
             color: $text-gray;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-md) {
+    .hero {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 32px;
+
+            &--left {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            &--right {
+                margin-left: 0;
+                margin-top: 40px;
+                width: 100%;
+            }
+            &--right::before {
+                content: '';
+                position: absolute;
+                height: 440px;
+            }
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        &__input {
+            width: auto;
+        }
+
+        &__text-hint {
+            font-size: 14px;
+            text-align: left;
+        }
+
+        &__counters {
+            display: none;
         }
     }
 }

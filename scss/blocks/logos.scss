@@ -10,3 +10,18 @@
         padding: 0 15px;
     }
 }
+
+@media screen and (max-width: $screen-md) {
+    .logos {
+        margin-top: 40px;
+        height: auto;
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            gap: 15px;
+        }
+    }
+    
+}
