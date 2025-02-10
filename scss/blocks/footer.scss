@@ -34,7 +34,33 @@
     &__block-2 {
         margin-top: 48px;
     }
+
     &__block-3 {
-        margin-top: 24px;
+        padding-top: 20px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__copyright {
+        font-size: 14px;
+        line-height: 20px;
+        color: $text-disabled;
+        flex-grow: 1;
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    &__icon {
+        height: 24px;
+        width: 24px;
+    }
+
+    &__icon:hover {
+        opacity: 0.7;
     }
 }
