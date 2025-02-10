@@ -75,6 +75,11 @@
             &-text {
                 color: $text-disabled;
             }
+
+            &-text:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
         }
 
         &-icon{
@@ -115,6 +120,10 @@
         &-item {
             margin-top: 12px;
             color: $text-disabled;
+        }
+        &-item:hover {
+            cursor: pointer;
+            opacity: 0.7;
         }
     }
 
@@ -178,16 +187,46 @@
             padding-top: 32px;
             padding-bottom: 40px;
             flex-direction: column;
+            align-items: center;
 
             &-left {
                 max-width: unset;
+                align-items: center;
+            }
+
+            &-text {
+                text-align: center;
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            &-link {
+                margin-top: 13px;
             }
 
             &-right {
-                padding-top: 32px;
-                flex-direction: column;
-                align-items: center;
+                margin-top: 32px;
+                padding-top: 0;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
             }
+        }
+
+        &__block-2::before {
+            content: none;
+            display: none;
+        }
+
+        &__block-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: unset;
+            padding-bottom: 24px;
+        }
+
+        &__icons {
+            margin-top: 32px;
         }
     }
 }

@@ -91,6 +91,10 @@
         line-height: 20px;
     }
 
+    &__button--primary:hover {
+        background-color: $primary-hover;
+    }
+
     &__counters {
         display: flex;
         flex-direction: row;
