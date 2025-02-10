@@ -16,6 +16,16 @@
         padding-bottom: 64px;
     }
 
+    &__block-1::before {
+        content: '';
+        position: absolute;
+        width: 530px;
+        height: 281px;
+        right: 112px;
+        background: url("../../assets/img/Pattern-footer-1.svg") no-repeat;
+        z-index: 1;
+    }
+
     &__title {
         margin-top: 64px;
         color: $white;
@@ -78,6 +88,17 @@
             margin-top: 16px;
             margin-bottom: 12px;
         }
+    }
+    
+    &__block-2::before {
+        content: '';
+        position: absolute;
+        width: 134px;
+        height: 194px;
+        left: 0;
+        margin-top: 80px;
+        background: url("../../assets/img/Pattern-footer-2.svg") no-repeat;
+        z-index: 1;
     }
 
     &__link {
