@@ -138,6 +138,11 @@
                 margin-top: 40px;
                 width: 100%;
             }
+            &--right::before {
+                content: '';
+                position: absolute;
+                height: 440px;
+            }
         }
 
         &__title {
