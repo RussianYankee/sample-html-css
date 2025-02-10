@@ -41,5 +41,14 @@
             font-size: 26px;
             line-height: 32px;
         }
+
+        &_card_header {
+            font-size: 18px;
+            line-height: 24px;
+            &--disabled {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
     }
 }
