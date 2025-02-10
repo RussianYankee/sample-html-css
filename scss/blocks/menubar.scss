@@ -133,7 +133,7 @@
         &__side {
             position: relative;
             top: 10px;
-            right: 110px;
+            right: 135px;
             width: fit-content;
             background: $white;
             border: 1px solid $pattern-fill;
@@ -157,6 +157,8 @@
 
             &-link {
                 text-decoration: none;
+                font-size: 24px;
+                line-height: 36px;
             }
 
         }
