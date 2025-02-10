@@ -34,3 +34,12 @@
     }
 
 }
+
+@media screen and (max-width: $screen-md) {
+    .gen {
+        &_section_header {
+            font-size: 26px;
+            line-height: 32px;
+        }
+    }
+}
