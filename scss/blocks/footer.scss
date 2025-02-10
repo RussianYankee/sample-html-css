@@ -32,7 +32,46 @@
     }
 
     &__block-2 {
-        margin-top: 48px;
+        padding-top: 48px;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-logo {
+            height: 50px;
+            width: 50px;
+        }
+
+        &-right {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 12px;
+            &-text {
+                color: $text-disabled;
+            }
+        }
+
+        &-icon{
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+        }
+
+        &-text {
+            color: $text-disabled;
+            margin-top: 16px;
+            margin-bottom: 12px;
+        }
     }
 
     &__block-3 {
